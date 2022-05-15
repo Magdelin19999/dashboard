@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');//concatenar rutas o direcciones de directorios
 const ejs = require('ejs');
-
+const {connectDB} = require('./DB');
 const app =express();
+
+connectDB();
 
 // settings
 app.set('views', path.join(__dirname, 'views'));
