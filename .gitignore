@@ -1,2 +1,5 @@
 node_modules
 .env
+mongoose.js
+pg.js
+index copy.js
