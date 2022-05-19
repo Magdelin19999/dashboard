@@ -1,8 +1,6 @@
 const express = require('express');
-const { json } = require('express/lib/response');
 const router = express.Router();
 
-const USERS = require('../controllers/users/selectAllUsers');
 
 router.get('/borracho', (req, res) => {
     res.render('./users/index', {boyaco:'Borracho'});
