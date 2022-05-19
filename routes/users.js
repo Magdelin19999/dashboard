@@ -17,13 +17,17 @@ router.get('/', (req, res) =>{
     console.log("home");
     res.render('pages/index');
 });
-router.get('/dashboard', (req, res) =>{
+router.get('/about', (req, res) =>{
     console.log("Dashboard");
-    res.render('pages/dashboard');
+    res.render('pages/about');
 });
 router.get('/registro-producto', (req, res) =>{
     console.log("Dashboard");
     res.render('pages/registro-producto');
+});
+router.get('/dashboard', (req, res) =>{
+    console.log("Dashboard");
+    res.render('pages/dashboard');
 });
 // inicio page
 router.get('/signin', (req, res) => {
