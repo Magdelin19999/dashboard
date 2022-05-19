@@ -34,14 +34,12 @@
 
 <body class="d-flex h-100 text-center text-white bg-dark">
 
-  <div class="  p-3 mx-auto ">
+  <div class=" cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <%- include('../partials/header'); %>
-
-
-      <main class="py-5 text-center container">
-        <form class="p-md-5 border-0 ">
-          <div class="row align-items-center g-lg-4 py-4">
-            <div class="col-lg-5 text-center text-lg-center">
+      <main class="container-sm px-4 py-4 text-center">
+        <form class="p-2 p-md-4 border-0">
+          <div class="row align-items-center g-lg-3 py-3">
+            <div class="col-lg-6 text-center text-lg-center">
               <div class="image-upload">
                 <label for="logoEmpresa">
                   <img class="mb-4 img-form" id="imagen" name="imagen" src="brand/bootstrap-logo-white.svg" />
@@ -50,7 +48,7 @@
                 <input id="logoEmpresa" name="logoEmpresa" type="file" onchange="perfil(event)" />
               </div>
             </div>
-            <div class="col-md-10 mx-auto col-lg-7">
+            <div class="col-md-10 mx-auto col-lg-6">
               <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput" class="text-secondary">Nombre Empresa</label>
@@ -76,15 +74,15 @@
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword" class="text-secondary">Password</label>
               </div>
-
               <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-              <hr class="my-4">
+              <hr class="my-2">
               <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
             </div>
           </div>
         </form>
 
       </main>
+
 
       <footer class="mt-auto text-white-50">
         <%- include('../partials/footer'); %>
