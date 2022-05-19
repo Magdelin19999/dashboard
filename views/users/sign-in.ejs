@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
+  <%- include('../partials/head'); %>
+
   <style>
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -17,7 +20,6 @@
       }
     }
   </style>
-  <%- include('../partials/head'); %>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
@@ -43,10 +45,9 @@
           <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
         </form>
       </main>
+      <%- include('../partials/footer'); %>
 
-      <footer class="mt-auto text-white-50">
-        <%- include('../partials/footer'); %>
-      </footer>
+      
   </div>
 </body>
 

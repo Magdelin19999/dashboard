@@ -15,10 +15,16 @@ router.get('/borracho', (req, res) => {
 // index page
 router.get('/', (req, res) =>{
     console.log("home");
-
     res.render('pages/index');
 });
-
+router.get('/dashboard', (req, res) =>{
+    console.log("Dashboard");
+    res.render('pages/dashboard');
+});
+router.get('/registro-producto', (req, res) =>{
+    console.log("Dashboard");
+    res.render('pages/registro-producto');
+});
 // inicio page
 router.get('/signin', (req, res) => {
     res.render('users/sign-in')
