@@ -3,3 +3,7 @@ node_modules
 mongoose.js
 pg.js
 index copy.js
+node_modules
+database
+controllers
+models

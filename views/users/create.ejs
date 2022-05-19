@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .image-upload>input {
+        display: none;
+      }
+
+      .img-form {
+        border-radius: 50em;
+        height: 200px;
+        width: 200px;
+        /*   max-height: 40vh; max-width: 40vh; */
+
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="  p-3 mx-auto ">
+    <%- include('../partials/header'); %>
+
+
+      <main class="py-5 text-center container">
+        <form class="p-md-5 border-0 ">
+          <div class="row align-items-center g-lg-4 py-4">
+            <div class="col-lg-5 text-center text-lg-center">
+              <div class="image-upload">
+                <label for="logoEmpresa">
+                  <img class="mb-4 img-form" id="imagen" name="imagen" src="brand/bootstrap-logo-white.svg" />
+                </label>
+
+                <input id="logoEmpresa" name="logoEmpresa" type="file" onchange="perfil(event)" />
+              </div>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-7">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Nombre Empresa</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Descripcion</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Celular</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Direccion</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Email address</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword" class="text-secondary">Password</label>
+              </div>
+
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+              <hr class="my-4">
+              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+            </div>
+          </div>
+        </form>
+
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <%- include('../partials/footer'); %>
+      </footer>
+  </div>
+
+</body>
+
+</html>
